@@ -18,16 +18,13 @@ class _BarCodeScannerPageState extends State<BarCodeScannerPage> {
   Widget build(BuildContext context) {
     return BottomSheetWidget(
       title: "Não foi possível identificar um código de barras.",
-      subtitle: "Tente escanear novamente ou digite o código do seu boleto",
+      subtitle: "Tente escanear novamente ou digite o código do seu boleto.",
       primaryLabel: "Escanear novamente",
       primaryOnPress: () {},
       secondaryLabel: "Digite o código",
       secondaryOnPress: () {},
     );
     return SafeArea(
-      top: true,
-      bottom: true,
-      right: true,
       child: RotatedBox(
         quarterTurns: 1,
         child: Scaffold(
