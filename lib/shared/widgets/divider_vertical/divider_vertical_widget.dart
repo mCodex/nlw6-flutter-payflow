@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payflow/shared/themes/app_colors.dart';
+import '/shared/themes/app_colors.dart';
 
 class DividerVerticalWidget extends StatelessWidget {
   const DividerVerticalWidget({Key? key}) : super(key: key);

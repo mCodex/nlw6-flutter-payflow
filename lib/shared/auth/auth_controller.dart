@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payflow/shared/models/user_model.dart';
+import '/shared/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthController {
