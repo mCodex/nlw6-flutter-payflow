@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payflow/shared/themes/app_colors.dart';
-import 'package:payflow/shared/themes/app_text_styles.dart';
+import '/shared/themes/app_colors.dart';
+import '/shared/themes/app_text_styles.dart';
 import '/shared/widgets/divider_vertical/divider_vertical_widget.dart';
 import '/shared/widgets/label_button/label_button_widget.dart';
 

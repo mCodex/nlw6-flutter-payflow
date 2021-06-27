@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:payflow/modules/insert_boleto/insert_boleto_controller.dart';
+import '/modules/insert_boleto/insert_boleto_controller.dart';
 
-import 'package:payflow/shared/themes/app_colors.dart';
-import 'package:payflow/shared/themes/app_text_styles.dart';
-import 'package:payflow/shared/widgets/input_text/input_text_widget.dart';
-import 'package:payflow/shared/widgets/set_label_buttons/set_label_buttons.dart';
+import '/shared/themes/app_colors.dart';
+import '/shared/themes/app_text_styles.dart';
+import '/shared/widgets/input_text/input_text_widget.dart';
+import '/shared/widgets/set_label_buttons/set_label_buttons.dart';
 
 class InsertBoletoPage extends StatefulWidget {
   final String? barCode;
@@ -24,7 +24,7 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
   final controller = InsertBoletoController();
 
   final moneyInputTextController = MoneyMaskedTextController(
-    leftSymbol: "R\$",
+    leftSymbol: "R\$ ",
     decimalSeparator: ",",
   );
 
@@ -124,8 +124,8 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
           Navigator.pop(context);
         },
         secondaryLabel: "Cadastrar",
-        secondaryOnPress: () {
-          controller.cadastrarBoleto();
+        secondaryOnPress: () async {
+          await controller.cadastrarBoleto();
         },
         enableSecondaryColor: true,
       ),
