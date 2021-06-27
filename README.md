@@ -1,16 +1,33 @@
-# payflow
+<p align="center">
+  <img alt="PayFlow" src=".github/payflow-logo.png" width="200px">
+</p>
 
-A new Flutter project.
+## About 📖
 
-## Getting Started
+A project developed during Rocketseat's Next Level Week which is a Flutter app to read boleto's barcode (a brazilian payment method) using camera or directly from an image using Google Machine Learning.
 
-This project is a starting point for a Flutter application.
+<p align="center">
+    <img alt="PayFlow" title="PayFlow" src=".github/cover.png" />
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Libraries 📚
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Google Sign-In
+- Google Machine Learning
+- Firebase
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Layout 🎨
+
+The original layout can be found [here](https://www.figma.com/file/kLK7FYnWKMoN68sQXcSniu/PayFlow).
+
+## How to run 🏃‍♂️
+
+Download this repository and then run:
+
+```bash
+flutter pub get
+```
+
+```bash
+flutter run
+```
