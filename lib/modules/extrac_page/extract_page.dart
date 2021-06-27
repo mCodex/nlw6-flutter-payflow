@@ -1,20 +1,17 @@
-import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
-import '/shared/models/boleto_model.dart';
 import '/shared/widgets/boleto_list/boleto_list_controller.dart';
 import '/shared/themes/app_colors.dart';
 import '/shared/themes/app_text_styles.dart';
-import '/shared/widgets/boleto_info/boleto_info_widget.dart';
 import '/shared/widgets/boleto_list/boleto_list_widget.dart';
 
-class MyBoletosPage extends StatefulWidget {
-  const MyBoletosPage({Key? key}) : super(key: key);
+class ExtractPage extends StatefulWidget {
+  const ExtractPage({Key? key}) : super(key: key);
 
   @override
-  _MyBoletosPageState createState() => _MyBoletosPageState();
+  _ExtractPageState createState() => _ExtractPageState();
 }
 
-class _MyBoletosPageState extends State<MyBoletosPage> {
+class _ExtractPageState extends State<ExtractPage> {
   final controller = BoletoListController();
 
   @override
@@ -22,22 +19,6 @@ class _MyBoletosPageState extends State<MyBoletosPage> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Stack(children: [
-            Container(
-              color: AppColors.primary,
-              height: 40,
-              width: double.maxFinite,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: ValueListenableBuilder<List<BoletoModel>>(
-                valueListenable: controller.boletosNotifier,
-                builder: (_, boletos, __) => AnimatedCard(
-                    direction: AnimatedCardDirection.top,
-                    child: BoletoInfoWidget(size: boletos.length)),
-              ),
-            ),
-          ]),
           Padding(
             padding: const EdgeInsets.only(
               top: 24,
@@ -47,7 +28,7 @@ class _MyBoletosPageState extends State<MyBoletosPage> {
             child: Row(
               children: [
                 Text(
-                  "Meus Boletos",
+                  "Meus Extratos",
                   style: AppTextStyles.titleBoldHeading,
                 ),
               ],
